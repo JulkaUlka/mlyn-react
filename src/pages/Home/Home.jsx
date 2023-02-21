@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { TheMovieDbAPI } from 'components/helpers/api';
-import { MovieList, MovieItem, LinkStyled } from './Home.styled';
-
+import PropTypes from 'prop-types';
+import { MoviesList } from 'components/MoviesList/MoviesList';
+import { MovieList } from './Home.styled';
 
 const theMovieDbAPI = new TheMovieDbAPI();
 
-export function Home() {
+function Home() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState('');
 
@@ -24,16 +25,20 @@ export function Home() {
 
   return (
     <>
+      <h2>Trending today:</h2>
       <MovieList>
-        {movies.map(({ id, title }) => (
-          <MovieItem key={id}>
-            <LinkStyled to={`/movies/${id}`}>
-              <h3>{title}</h3>
-            </LinkStyled>
-          </MovieItem>
-        ))}
+        {movies !== null &&
+          movies.map(movie => {
+            return <MoviesList {...movie} key={movie.id} />;
+          })}
       </MovieList>
       {error && <p>Error{error}</p>}
     </>
   );
 }
+
+Home.propTypes = {
+  movies: PropTypes.array,
+};
+
+export default Home;

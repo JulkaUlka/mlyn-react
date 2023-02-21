@@ -4,7 +4,6 @@ export class TheMovieDbAPI {
   static BASE_URL = 'https://api.themoviedb.org/3';
   static API_KEY = '1deae1a36202e3ac8c29219a3d453e0f';
   static IMG_URL = 'https://image.tmdb.org/t/p/w500';
- 
 
   constructor() {
     this.page = 1;
@@ -13,7 +12,6 @@ export class TheMovieDbAPI {
   }
 
   async getPopularFilms(pageNumber) {
-   
     this.page = pageNumber;
     const response = await axios.get(
       `${TheMovieDbAPI.BASE_URL}/trending/movie/week`,
@@ -24,12 +22,11 @@ export class TheMovieDbAPI {
         },
       }
     );
- 
+
     return response;
-  } 
+  }
 
   async fetchUniqFilms(query) {
-  
     const searchParams = {
       params: {
         language: 'en-US',
@@ -43,9 +40,8 @@ export class TheMovieDbAPI {
       `${TheMovieDbAPI.BASE_URL}/search/movie`,
       searchParams
     );
-    
-    return response;
 
+    return response;
   }
 
   async getMovieInfoById(id) {
@@ -57,5 +53,32 @@ export class TheMovieDbAPI {
 
     return response;
   }
-  
+
+  async getCastInfo(id) {
+    const response = await axios.get(
+      `${TheMovieDbAPI.BASE_URL}/movie/${id}/credits?`,
+      {
+        params: {
+          api_key: TheMovieDbAPI.API_KEY,
+          language: 'en-US',
+        },
+      }
+    );
+
+    return response;
+  }
+
+  async getReviews(id) {
+    const response = await axios.get(
+      `${TheMovieDbAPI.BASE_URL}/movie/${id}/reviews?`,
+      {
+        params: {
+          api_key: TheMovieDbAPI.API_KEY,
+          language: 'en-US',
+          page: this.page,
+        },
+      }
+    );
+    return response;
+  }
 }
