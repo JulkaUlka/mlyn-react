@@ -3,7 +3,7 @@ import { TheMovieDbAPI } from 'components/helpers/api';
 import { useParams } from 'react-router-dom';
 import { Title, CastList, CastItem, Block, Image, Text } from './Cast.styled';
 import PropTypes from 'prop-types';
-
+import { Loader } from 'components/Loader/Loader';
 const theMovieDbAPI = new TheMovieDbAPI();
 
 export function Cast() {
@@ -35,10 +35,14 @@ export function Cast() {
       <CastList>
         {cast.slice(0, 10).map(cast => (
           <CastItem key={cast.id}>
-            <Image
-              src={`${TheMovieDbAPI.IMG_URL + cast.profile_path}`}
-              alt={cast.name}
-            />
+            {cast.profile_path ? (
+              <Image
+                src={`${TheMovieDbAPI.IMG_URL + cast.profile_path}`}
+                alt={cast.name}
+              />
+            ) : (
+              <Loader />
+            )}
             <h4>{cast.name}</h4>
             <Text>Character: {cast.character}</Text>
           </CastItem>

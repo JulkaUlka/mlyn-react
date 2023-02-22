@@ -3,6 +3,7 @@ import { TheMovieDbAPI } from 'components/helpers/api';
 import { useParams, Routes, Route, useLocation } from 'react-router-dom';
 import { Cast } from 'pages/Cast/Cast';
 import { Reviews } from 'pages/Reviews/Reviews';
+import { Loader } from 'components/Loader/Loader';
 import {
   Block,
   Image,
@@ -42,8 +43,10 @@ function MovieDetails() {
       <LinkStyled to={goBackLink}>Go back</LinkStyled>
       {movie && (
         <Block>
-          {poster_path && (
+          {poster_path ? (
             <Image src={`${TheMovieDbAPI.IMG_URL + poster_path}`} alt={title} />
+          ) : (
+            <Loader />
           )}
           <InfoBlock>
             <h1>{title}</h1>
@@ -65,10 +68,20 @@ function MovieDetails() {
       <Title>Additional information</Title>
       <ul>
         <li>
-          <NavLinkStyled to={`cast`} state={{ from: location?.state?.from ?? '/' }}>Cast</NavLinkStyled>
+          <NavLinkStyled
+            to={`cast`}
+            state={{ from: location?.state?.from ?? '/' }}
+          >
+            Cast
+          </NavLinkStyled>
         </li>
         <li>
-          <NavLinkStyled to={`reviews`} state={{ from: location?.state?.from ?? '/' }}>Reviews</NavLinkStyled>
+          <NavLinkStyled
+            to={`reviews`}
+            state={{ from: location?.state?.from ?? '/' }}
+          >
+            Reviews
+          </NavLinkStyled>
         </li>
       </ul>
 

@@ -16,9 +16,11 @@ color: black;
 `;
 export const Image = styled.img`
 height: 400px;
+margin: 0 auto;
 `;
 export const Title = styled.h3`
 width: 260px;
 text-wrap: wrap;
 text-align: center;
+margin: 0 auto;
 `;
