@@ -65,10 +65,10 @@ function MovieDetails() {
       <Title>Additional information</Title>
       <ul>
         <li>
-          <NavLinkStyled to={`cast`}>Cast</NavLinkStyled>
+          <NavLinkStyled to={`cast`} state={{ from: location?.state?.from ?? '/' }}>Cast</NavLinkStyled>
         </li>
         <li>
-          <NavLinkStyled to={`reviews`}>Reviews</NavLinkStyled>
+          <NavLinkStyled to={`reviews`} state={{ from: location?.state?.from ?? '/' }}>Reviews</NavLinkStyled>
         </li>
       </ul>
 
