@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/723.11eb5ff0.chunk.js","mappings":"yIAgBA,UAbA,WAGE,OACE,8BACE,8CAIL,C","sources":["pages/Works/Works.jsx"],"sourcesContent":["import React from 'react';\n\n\nfunction Works() {\n  \n\n  return (\n    <section>\n      <h2>Hello from works</h2>\n    \n    </section>\n  );\n}\n\n\n\nexport default Works;\n"],"names":[],"sourceRoot":""}

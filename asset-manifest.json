@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.3c0c9886.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.a0295874.js",
-    "static/js/485.9ea50958.chunk.js": "/goit-react-hw-05-movies/static/js/485.9ea50958.chunk.js",
-    "static/js/611.a1373577.chunk.js": "/goit-react-hw-05-movies/static/js/611.a1373577.chunk.js",
-    "static/js/720.504deb6e.chunk.js": "/goit-react-hw-05-movies/static/js/720.504deb6e.chunk.js",
-    "static/js/629.58ef9561.chunk.js": "/goit-react-hw-05-movies/static/js/629.58ef9561.chunk.js",
-    "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.3c0c9886.css.map": "/goit-react-hw-05-movies/static/css/main.3c0c9886.css.map",
-    "main.a0295874.js.map": "/goit-react-hw-05-movies/static/js/main.a0295874.js.map",
-    "485.9ea50958.chunk.js.map": "/goit-react-hw-05-movies/static/js/485.9ea50958.chunk.js.map",
-    "611.a1373577.chunk.js.map": "/goit-react-hw-05-movies/static/js/611.a1373577.chunk.js.map",
-    "720.504deb6e.chunk.js.map": "/goit-react-hw-05-movies/static/js/720.504deb6e.chunk.js.map",
-    "629.58ef9561.chunk.js.map": "/goit-react-hw-05-movies/static/js/629.58ef9561.chunk.js.map"
+    "main.css": "/mlyn-react/static/css/main.c1237af6.css",
+    "main.js": "/mlyn-react/static/js/main.15434c0a.js",
+    "static/js/227.aab4433c.chunk.js": "/mlyn-react/static/js/227.aab4433c.chunk.js",
+    "static/js/889.377e1fa4.chunk.js": "/mlyn-react/static/js/889.377e1fa4.chunk.js",
+    "static/js/104.d0355497.chunk.js": "/mlyn-react/static/js/104.d0355497.chunk.js",
+    "static/js/723.11eb5ff0.chunk.js": "/mlyn-react/static/js/723.11eb5ff0.chunk.js",
+    "static/js/969.1df21e66.chunk.js": "/mlyn-react/static/js/969.1df21e66.chunk.js",
+    "static/js/243.a62662df.chunk.js": "/mlyn-react/static/js/243.a62662df.chunk.js",
+    "static/media/title.jpg": "/mlyn-react/static/media/title.ccea34186bdd82ce2866.jpg",
+    "static/media/logo.png": "/mlyn-react/static/media/logo.93bd5ee3ab4ee6e82ba8.png",
+    "index.html": "/mlyn-react/index.html",
+    "main.c1237af6.css.map": "/mlyn-react/static/css/main.c1237af6.css.map",
+    "main.15434c0a.js.map": "/mlyn-react/static/js/main.15434c0a.js.map",
+    "227.aab4433c.chunk.js.map": "/mlyn-react/static/js/227.aab4433c.chunk.js.map",
+    "889.377e1fa4.chunk.js.map": "/mlyn-react/static/js/889.377e1fa4.chunk.js.map",
+    "104.d0355497.chunk.js.map": "/mlyn-react/static/js/104.d0355497.chunk.js.map",
+    "723.11eb5ff0.chunk.js.map": "/mlyn-react/static/js/723.11eb5ff0.chunk.js.map",
+    "969.1df21e66.chunk.js.map": "/mlyn-react/static/js/969.1df21e66.chunk.js.map",
+    "243.a62662df.chunk.js.map": "/mlyn-react/static/js/243.a62662df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c0c9886.css",
-    "static/js/main.a0295874.js"
+    "static/css/main.c1237af6.css",
+    "static/js/main.15434c0a.js"
   ]
 }

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmlyn_react=self.webpackChunkmlyn_react||[]).push([[104],{3575:function(e,n,c){c.r(n);c(2791);var r=c(184);n.default=function(){return(0,r.jsx)("section",{children:(0,r.jsx)("h2",{children:"Hello from about"})})}}}]);
+//# sourceMappingURL=104.d0355497.chunk.js.map
