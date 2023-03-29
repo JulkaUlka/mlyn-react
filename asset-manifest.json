@@ -1,20 +1,28 @@
 {
   "files": {
     "main.css": "/mlyn-react/static/css/main.c1237af6.css",
-    "main.js": "/mlyn-react/static/js/main.15434c0a.js",
-    "static/js/227.aab4433c.chunk.js": "/mlyn-react/static/js/227.aab4433c.chunk.js",
-    "static/js/889.377e1fa4.chunk.js": "/mlyn-react/static/js/889.377e1fa4.chunk.js",
+    "main.js": "/mlyn-react/static/js/main.a7c85bd1.js",
+    "static/js/74.e91a790a.chunk.js": "/mlyn-react/static/js/74.e91a790a.chunk.js",
+    "static/js/760.2ec57989.chunk.js": "/mlyn-react/static/js/760.2ec57989.chunk.js",
     "static/js/104.d0355497.chunk.js": "/mlyn-react/static/js/104.d0355497.chunk.js",
     "static/js/723.11eb5ff0.chunk.js": "/mlyn-react/static/js/723.11eb5ff0.chunk.js",
     "static/js/969.1df21e66.chunk.js": "/mlyn-react/static/js/969.1df21e66.chunk.js",
     "static/js/243.a62662df.chunk.js": "/mlyn-react/static/js/243.a62662df.chunk.js",
+    "static/media/5.jpg": "/mlyn-react/static/media/5.e03b1ebadafd6587313a.jpg",
+    "static/media/2.jpg": "/mlyn-react/static/media/2.1745f4c2ab88455b1b0d.jpg",
     "static/media/title.jpg": "/mlyn-react/static/media/title.ccea34186bdd82ce2866.jpg",
+    "static/media/4.jpg": "/mlyn-react/static/media/4.c28d84d5916fe0c5ee71.jpg",
+    "static/media/1.jpg": "/mlyn-react/static/media/1.f28af5114b37f6ea029d.jpg",
+    "static/media/6.jpg": "/mlyn-react/static/media/6.7580bbaabcbda7af1ee9.jpg",
+    "static/media/3.jpg": "/mlyn-react/static/media/3.46cdacd86b66af3d28ac.jpg",
+    "static/media/7.jpg": "/mlyn-react/static/media/7.67e9c98a3c993681d82e.jpg",
+    "static/media/8.jpg": "/mlyn-react/static/media/8.03f3971ba1a2206363d4.jpg",
     "static/media/logo.png": "/mlyn-react/static/media/logo.93bd5ee3ab4ee6e82ba8.png",
     "index.html": "/mlyn-react/index.html",
     "main.c1237af6.css.map": "/mlyn-react/static/css/main.c1237af6.css.map",
-    "main.15434c0a.js.map": "/mlyn-react/static/js/main.15434c0a.js.map",
-    "227.aab4433c.chunk.js.map": "/mlyn-react/static/js/227.aab4433c.chunk.js.map",
-    "889.377e1fa4.chunk.js.map": "/mlyn-react/static/js/889.377e1fa4.chunk.js.map",
+    "main.a7c85bd1.js.map": "/mlyn-react/static/js/main.a7c85bd1.js.map",
+    "74.e91a790a.chunk.js.map": "/mlyn-react/static/js/74.e91a790a.chunk.js.map",
+    "760.2ec57989.chunk.js.map": "/mlyn-react/static/js/760.2ec57989.chunk.js.map",
     "104.d0355497.chunk.js.map": "/mlyn-react/static/js/104.d0355497.chunk.js.map",
     "723.11eb5ff0.chunk.js.map": "/mlyn-react/static/js/723.11eb5ff0.chunk.js.map",
     "969.1df21e66.chunk.js.map": "/mlyn-react/static/js/969.1df21e66.chunk.js.map",
@@ -22,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.c1237af6.css",
-    "static/js/main.15434c0a.js"
+    "static/js/main.a7c85bd1.js"
   ]
 }
