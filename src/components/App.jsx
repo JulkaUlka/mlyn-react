@@ -3,11 +3,10 @@ import { lazy, Suspense } from 'react';
 import { Header } from './Header/Header';
 
 const LazyHome = lazy(() => import('../pages/Home/Home'));
-const LazyMovieDetails = lazy(() =>
-  import('../pages/MovieDetails/MovieDetails')
-);
-const LazyMovies = lazy(() => import('../pages/Movies/Movies'));
-
+const LazyWorkDetails = lazy(() => import('../pages/WorkDetails/WorkDetails'));
+const LazyAbout = lazy(() => import('../pages/About/About'));
+const LazyWorks = lazy(() => import('../pages/Works/Works'));
+const LazyContacts = lazy(() => import('../pages/Contacts/Contacts'));
 export const App = () => {
   return (
     <div>
@@ -15,8 +14,10 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<LazyHome />} />
-            <Route path="/movies" element={<LazyMovies />} />
-            <Route path="/movies/:moviesId/*" element={<LazyMovieDetails />} />
+            <Route path="/about" element={<LazyAbout />} />
+            <Route path="/works" element={<LazyWorks />} />
+            <Route path="/:workId/*" element={<LazyWorkDetails />} />
+            <Route path="/contacts" element={<LazyContacts />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Routes>
