@@ -1,77 +1,53 @@
 // import { useState, useEffect } from 'react';
 
-// import { useParams,  useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-// import { Loader } from 'components/Loader/Loader';
-// import {
-//   Block,
-//   Image,
-//   InfoBlock,
-//   Title,
-//   LinkStyled,
-//   NavLinkStyled,
-// } from './WorkDetails.styled';
-
-
-
+import { Loader } from 'components/Loader/Loader';
+import {
+  Block,
+  Image,
+  InfoBlock,
+  
+} from './WorkDetails.styled';
+import { photo } from 'components/helpers/photo';
 
 function WorkDetails() {
-  
+  const { '*' : photoIndex } = useParams();
 
-  // const { poster_path, title, vote_average, genres, overview } = movie;
+const selectedPhoto = photo[photoIndex-1];
+  const {  src, title, location, visualization, architecture, made, img } =
+    selectedPhoto;
 
   return (
     <>
-    <h1>hello from details</h1>
-      {/* <LinkStyled to={goBackLink}>Go back</LinkStyled>
-      {movie && (
+      { selectedPhoto && (
         <Block>
-          {poster_path ? (
-            <Image src={`${TheMovieDbAPI.IMG_URL + poster_path}`} alt={title} />
-          ) : (
-            <Loader />
-          )}
+          {src ? <Image src={src} alt={title} /> : <Loader />}
           <InfoBlock>
-            <h1>{title}</h1>
-            <p>User score: {Math.round(vote_average * 10)} %</p>
+            <h2>{title}</h2>
+            <p>{location}</p>
             <p>
-              <b>Overview: </b>
-              {overview}
+              <b>Visualization: </b>
+              {visualization}
             </p>
-            {genres && (
-              <p>
-                <b>Genres: </b>
-                {genres.map(genre => genre.name).join(', ')}
-              </p>
-            )}
+            <p>
+              <b>Architecture: </b>
+              {architecture}
+            </p>
+            <p>
+              <b>Made for: </b>
+              {made}
+            </p>
           </InfoBlock>
         </Block>
       )}
-      {error && <p>Error{error}</p>}
-      <Title>Additional information</Title>
-      <ul>
-        <li>
-          <NavLinkStyled
-            to={`cast`}
-            state={{ from: location?.state?.from ?? '/' }}
-          >
-            Cast
-          </NavLinkStyled>
-        </li>
-        <li>
-          <NavLinkStyled
-            to={`reviews`}
-            state={{ from: location?.state?.from ?? '/' }}
-          >
-            Reviews
-          </NavLinkStyled>
-        </li>
-      </ul> */}
-
      
+
+      <ul>
+        {img.map((path)=> (<li key={path}><img src={path} alt={title} width="250" /></li>))}
+      </ul>
     </>
   );
 }
-
 
 export default WorkDetails;

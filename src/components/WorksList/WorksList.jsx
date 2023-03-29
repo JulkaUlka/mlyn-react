@@ -31,7 +31,7 @@ export function WorksList() {
               state={{ from: location }}
               className="image"
             >
-              {src ? <img src={src} alt="office" /> : <Loader />}
+              {src ? <img src={src} alt={title} /> : <Loader />}
               <Text className="text">{title}</Text>
             </LinkStyled>
           </Item>

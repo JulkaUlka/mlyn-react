@@ -22,6 +22,7 @@ export const Item = styled.div`
   position: relative;
 
   &:hover .text {
+    background-image: linear-gradient(0deg,rgba(0,0,0,.5),transparent);
     opacity: 1;
    animation: move-down 0.3s linear;
     padding: 1em;
@@ -89,10 +90,10 @@ export const Text = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #f0eeee;
+  color: #fff;
   font-size: 25px;
   pointer-events: none;
   z-index: 4;
- backdrop-filter: blur(20px) saturate(1.8);
- 
+ backdrop-filter: blur(5px) saturate(1.8);
+
 `;

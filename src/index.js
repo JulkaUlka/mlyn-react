@@ -6,8 +6,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <BrowserRouter basename='/mlyn-react/'> */}
-    <BrowserRouter>
+    <BrowserRouter basename='/mlyn-react/'>
+    {/* <BrowserRouter> */}
       <App />
     </BrowserRouter>
   </React.StrictMode>

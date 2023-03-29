@@ -14,87 +14,98 @@ import title13 from '../../images/013_lutizh/title.jpg';
 import title14 from '../../images/014_4x4/title.jpg';
 import title15 from '../../images/015_club_house3/title.jpg';
 import title16 from '../../images/003_townhouse_gatne/title.jpg';
+import idealist1 from '../../images/001_idealist/1.jpg';
+import idealist2 from '../../images/001_idealist/2.jpg';
+import idealist3 from '../../images/001_idealist/3.jpg';
+import idealist4 from '../../images/001_idealist/4.jpg';
+import idealist5 from '../../images/001_idealist/5.jpg';
+import idealist6 from '../../images/001_idealist/6.jpg';
+import idealist7 from '../../images/001_idealist/7.jpg';
+import idealist8 from '../../images/001_idealist/8.jpg';
 export const photo = [
   {
     id: 1,
     src: title1,
-    title: "idealist"      
+    title: 'idealist',
+    location: 'Ukraine_Kyiv',
+    visualization: '@MLYN',
+    architecture: '@SHAW',
+    made: '@comfort_life_development',
+    img: [idealist1,idealist2,idealist3,idealist4,idealist5,idealist6,idealist7,idealist8],
   },
   {
     id: 2,
     src: title2,
-    title: "riverside" 
+    title: 'riverside',
   },
   {
     id: 3,
     src: title3,
-    title: "club house" 
+    title: 'club house',
   },
   {
     id: 4,
     src: title4,
-    title: "Office in the center of Irpen" 
+    title: 'Office in the center of Irpen',
   },
   {
     id: 5,
     src: title5,
-    title: "house d28"
+    title: 'house d28',
   },
   {
     id: 6,
     src: title6,
-    title: "naikrashchyi"
+    title: 'naikrashchyi',
   },
   {
     id: 7,
     src: title7,
-    title: "office block Unit City"
+    title: 'office block Unit City',
   },
   {
     id: 8,
     src: title8,
-    title: "office for AVG"
+    title: 'office for AVG',
   },
   {
     id: 9,
     src: title9,
-    title: "z 132"
+    title: 'z 132',
   },
   {
     id: 10,
     src: title10,
-    title: "GT.APT"
+    title: 'GT.APT',
   },
   {
     id: 11,
     src: title11,
-    title: "rybalsky"
+    title: 'rybalsky',
   },
   {
     id: 12,
     src: title12,
-    title: "Drigani furniture"
+    title: 'Drigani furniture',
   },
   {
     id: 13,
     src: title13,
-    title: "private house. Lytizh"
+    title: 'private house. Lytizh',
   },
   {
     id: 14,
     src: title14,
-    title: "4x4"
+    title: '4x4',
   },
   {
     id: 15,
     src: title15,
-    title: "club house3"
+    title: 'club house3',
   },
   {
     id: 16,
     src: title16,
-    title: "club house"
-  }
-
+    title: 'club house',
+  },
 ];
-
